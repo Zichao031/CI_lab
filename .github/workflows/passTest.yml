@@ -38,6 +38,6 @@ jobs:
       - name: Run passing tests
         run: |
           cmake3 .
-          make
-          ./test
+          make 
+          ./test 
       
