@@ -24,8 +24,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      
+      
       # Runs a single command using the runners shell
+      - name: copy gtest
+        run:  git submodule add https://github.com/google/googletest.git
+        
       - name: cmake .
         run:  cmake .
         
