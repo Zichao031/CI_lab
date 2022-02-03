@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: cmake3 . make ./test
-        run:  cmake3 . make ./test
+      - name: cmake . make ./test
+        run:  cmake . make ./test
