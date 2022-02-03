@@ -14,7 +14,7 @@ Rectangle::Rectangle(int w, int h) {
 	}
 	else {
 		width = w;
-        	height = w;
+        	height = h;
 	}
 }
 
