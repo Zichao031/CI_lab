@@ -35,8 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Run Cmake
-        run: Cmake .
+      - name: copy gtest
+        run: git submodule update --init --recursive
+          
+      - name: Run cmake
+        run: cmake .
         
       - name: Run make
         run: make
