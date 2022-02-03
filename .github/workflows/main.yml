@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
           
       - name: Run Cmake
-        run: Cmake .
+        run: cmake .
         
       - name: Run make
         run: make
